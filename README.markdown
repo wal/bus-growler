@@ -16,7 +16,7 @@ This script requires node.js, so install that first <http://node.js>
   node bus-growler.js 130 31 29a
 </pre>
 
-And you will automatically get a growl notification should the status change
+And you will automatically get a growl notification should the status of any of those routes change
 
 ## Comments
 
