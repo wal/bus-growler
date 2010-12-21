@@ -13,7 +13,7 @@ for(var i=2; i<process.argv.length; i++) {
   routes[process.argv[i].toLowerCase()] = "";
 }
 
-setInterval(function() {
+check_routes = function() {
   for(var route in routes) {
 
     console.log("checking route " + route);
@@ -43,5 +43,12 @@ setInterval(function() {
       });
     });
   }
-}, 10000);
+};
+
+
+check_routes();
+
+setInterval(function() {
+  check_routes();
+}, 300000); // 5 Minutes
 
